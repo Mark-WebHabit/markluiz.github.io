@@ -475,6 +475,11 @@ transform: scale(0.9);
     align-self: flex-start;
   }
 }
+@media (max-width: 375px) {
+  main{
+    padding: 0 1em;
+  }
+}
 
 /* services section */
 
@@ -737,6 +742,19 @@ background: url("./media/classfax3.png") no-repeat center center / cover;
 @media (max-width: 430px) {
   p#title1, p#title2, p#title3{
     font-size: 2.3rem;
+  }
+}
+@media (max-width: 390px) {
+  p#title1, p#title2, p#title3{
+    font-size: 2rem;
+  }
+    #project-title {
+      font-size: 1.4rem;
+    }
+}
+@media (max-width: 375px) {
+  .info .upperInfo .social-media-buttons .logo-buttons img {
+      width: 25px;
   }
 }
 
