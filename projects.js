@@ -16,4 +16,12 @@ export const projects = [
     image2: "./media/classfax2.png",
     image3: "./media/classfax3.png",
   },
+  {
+    title: "Cemetery Mapping and Information System",
+    description:
+      "The purpose of this system is for ease mapping or finding the coordinates of a certain lot and lawn within the cemetery, also to manage all the people that goes in and out of the cemetery and properly manage the records of the client cemetery",
+    image1: "./media/caps1.png",
+    image2: "./media/caps2.png",
+    image3: "./media/caps3.png",
+  },
 ];
