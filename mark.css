@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Karla:wght@500&display=swap');
+
+:root{
+  --white: #ffffff;
+  --redish: #B34700;
+  --blackish: #1E1E1E;
+  --grayish: #333333;
+  --gray: #bfbfbf;
+  --grayfont: #666666;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  color:var(--white);
+  user-select: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--blackish);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1em 2em;
+}
+
+header > p{
+  font-size: 1.475rem;
+}
+
+header > nav > a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.7em;
+  font-size: 1rem;
+  font-weight: lighter;
+  transition: color 150ms linear;
+}
+
+header > nav > a:hover{
+  color: var(--redish);
+}
+
+main{
+  height: auto;
+  display: grid;
+  grid-template-columns: 41.66% 1fr;
+}
+
+.picture{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.picture > img{
+  display: block;
+  width: 95%;
+  transform: scaleX(-1);
+}
+
+.info{
+  padding-top: 8em;
+}
+
+.info .upperInfo{
+  min-height: 80px;
+  height: 81px;
+  display: flex;
+  margin-bottom: 5em;
+  
+}
+/* .info .upperInfo .name {
+  display: flex;
+  
+}  */
+.info .upperInfo .name > p{
+  display: inline;
+  font-size: 3.125rem;
+  position: relative;
+}
+
+.info .upperInfo .name >p::after{
+  content: "";
+  height: 0;
+  width: 40%;
+  border: 1px solid var(--redish);
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.info .upperInfo .name > span{
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+  color: var(--redish);
+  margin-right: 30px;
+}
+
+.info .seperator{
+  height: 100%;
+  border: 1px solid var(--gray);
+  margin-right: 30px;
+}
+
+.info .upperInfo .social-media-buttons{
+  height: 100%;
+  padding-top:0.7em;
+  display: flex;
+  align-items: center;
+}
+
+.info .upperInfo .social-media-buttons .logo-buttons img{
+  width: 40px;
+  margin: 0 0.8em;
+  cursor: pointer;
+}
+.info .upperInfo .social-media-buttons .logo-buttons img:first-child {
+  margin-left: 0;
+}
+
+.info .upperInfo .social-media-buttons .logo-buttons{
+  margin-right: 3em;
+}
+
+.info .upperInfo .social-media-buttons .download-cv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info .upperInfo .social-media-buttons .download-cv img{
+  width: 25px;
+}
+
+.info .upperInfo .social-media-buttons .download-cv span{
+  font-size: 0.875;
+  font-weight: lighter;
+  color:var(--gray);
+}
+
+.info .short-description{
+  margin-bottom: 5em;
+}
+
+.info .short-description h1{
+  width: 80%;
+  font-size: 2.875rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.info .short-description p{
+  font-family: "Karla", sans-serif;
+  font-weight: lighter;
+  color: var(--grayfont);
+  width: 80%;
+}
+
+.info .main-buttons{
+  height: max-content;
+  display: flex;
+  align-items: center;
+  padding: 1em 0.5em;
+  border: 1px solid var(--redish);
+  width: max-content;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.info .main-buttons:hover{
+transform: scale(0.9);
+}
+
+.info .main-buttons * {
+  font-family: "Karla", sans-serif;
+  font-size: 1.5625rem;
+  color: var(--redish);
+}
+
+.info .main-buttons p:first-child{
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+.info .main-buttons p:last-child{
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+.services{
+  background-color: var(--grayish);
+  padding: 2em 0;
+  padding-bottom: 1em;
+}
+
+.services > p{
+  font-size: 2.5rem;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+
+.services span{
+  font-size: 18;
+  color: var(--grayfont);
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.services .cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 4%;
+  margin-bottom: 2em;
+}
+
+.services .cards .card{
+  width: 18%;
+  aspect-ratio: 4 / 3;
+  background-color: var(--blackish);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1em 0.4em 0.4em 0.4em;
+  border-radius: 1em;
+  transition: all 150ms linear;
+}
+
+.services .cards .card:hover{
+  transform: scale(0.9);
+}
+
+.services .cards .card * {
+    font-family: "Karla", sans-serif;
+}
+
+.services .cards .card .forte{
+  font-size: 1.5625rem;
+  margin: 0.4em 0 0 0;
+}
+.services .cards .card .technologies{
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.services .collections{
+  display: grid;
+  grid-template-columns: 17% 1fr 17%;
+  height: 70vh;
+}
+
+.services .collections .leftArrow, .services .collections .rightArrow{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.services .collections .leftArrow img,
+.services .collections .rightArrow img{
+  cursor: pointer;
+}
+
+.services .collections .rightArrow{
+  justify-content: flex-start;
+}
+
+.services .collections .leftArrow img{
+transform:  scaleX(-1);
+}
+
+.services .collections .collectionPhoto > p{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services .collections .collectionPhoto .photoContainer{
+  height: 70%;
+  padding: 0 1em ;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5em 0.5em;
+  grid-template-areas: 
+  "first second"
+  "first third"
+  ;
+}
+
+.services .collections .collectionPhoto .photoContainer .first{
+  grid-area: first;
+}
+.services .collections .collectionPhoto .photoContainer .second{
+  grid-area: second;
+}
+.services .collections .collectionPhoto .photoContainer .third{
+  grid-area: third;
+}
+.services .collections .collectionPhoto .photoContainer > small{
+  font-size: 10rem;
+}
+ .first {
+  background: no-repeat center center / cover;
+}
+ .second {
+  background: no-repeat center center / cover;
+}
+.third{
+background: url("./media/classfax3.png") no-repeat center center / cover;
+}
+
+.project-description{
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.2em 1em 1em 1em;
+  font-weight: lighter;
+  color: var(--grayfont);
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+.pagination .active{
+  width: 25px;
+}
+
+.pagination img:not(.active){
+  width: 20px;
+}
+
+#contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3em 0;
+  padding-top: 2em;
+}
+
+#contact *{
+  font-family: "Karla", sans-serif;
+}
+
+#contact > h1{
+  font-size: 2.5rem;
+  font-weight:lighter;
+}
+
+#contact > p{
+  font-size: 1.125rem;
+  color: var(--grayfont);
+}
+
+.contact-boxes{
+  width: 76.52%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.contact-boxes .box{
+  width: 26.85%;
+  height: auto;
+  background-color: var(--grayish);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 150ms linear;display: flex;
+  align-items: center;
+  padding: 1em 0.6em;
+  gap: 1em;
+}
+
+.contact-boxes .box:hover{
+  border: 1px solid var(--redish);
+  transform: scale(0.9);
+}
+
+.contact-boxes .box > p{
+  font-size: 1.125rem;
+}
